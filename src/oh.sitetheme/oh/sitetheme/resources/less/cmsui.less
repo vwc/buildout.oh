@@ -18,8 +18,8 @@
 
 .discreet {
     color: #666;
-    font-size: 85%;
-    font-weight: normal;
+    font-size: @font-size-small;
+    font-weight: 1;
 }
 
 .visualHighlight {
@@ -33,8 +33,6 @@
     width: 35%;
     clear: right;
     color: @gray-light;
-    font-family: @font-family-sans-serif;
-    font-weight: 300;
     line-height: @line-height-computed - 3;
     padding: @line-height-computed / 2 @line-height-computed;
     margin: @line-height-computed 0 @line-height-computed @line-height-computed;
@@ -46,9 +44,6 @@
     padding: @line-height-computed;
     margin: 0 0 @line-height-computed;
     border-left: 5px solid @gray-light;
-    font-family: @font-family-monospace;
-    font-size: @font-size-base + 2;
-    line-height: @line-height-computed * 1.25;
     clear: both;
 }
 
@@ -84,9 +79,12 @@ dd.image-caption {
 
 
 input.context,
-input.standalone {
+input.standalone,
+input.addreference,
+input.submit-widget {
     .btn();
     .btn-default();
+    margin-right: @line-height-computed / 2;
 }
 
 #category {
@@ -148,10 +146,10 @@ select.datetime-widget,
 #content .field input[type="text"][name$=".title"],
 #form-widgets-IBasic-title,
 #archetypes-fieldname-title input {
-    height: @line-height-computed * 1.5;
+    height: @line-height-computed * 1.75;
     line-height: @line-height-computed * 1.5;
     font-size: @font-size-base * 1.25;
-    font-weight: bold;
+    font-weight: 400;
     width: 100%;
     color: @gray;
 }
@@ -162,7 +160,7 @@ select.datetime-widget,
 #archetypes-fieldname-description textarea#description {
     color:@gray;
     font-size: @font-size-base;
-    font-weight: bold;
+    font-weight: 400;
     width: 100%;
 }
 
@@ -170,7 +168,7 @@ div.fieldTextFormat {
     //padding: @line-height-computed;
     text-align: right;
     label {
-        font-weight: normal;
+        font-weight: 300;
         .text-muted();
     }
     select {
@@ -179,21 +177,43 @@ div.fieldTextFormat {
 }
 
 #content-core label {
-    font-weight: bold;
+    font-weight: 400;
     span.formHelp {
         .help-block();
         .text-muted();
-        font-weight: normal;
+        font-weight: 300;
     }
 }
 
 div.field {
     margin-bottom: @line-height-computed / 2;
+    label span.formHelp {
+        display: block;
+        font-weight: normal;
+        .text-muted();
+    }
+    div.label {
+        background: transparent;
+        color: @text-color;
+        font-size: @font-size-base;
+        font-weight: 700;
+        line-height: @line-height-computed;
+        padding: 0px;
+        .text-left();
+        span.formHelp {
+            .help-block();
+            .text-muted();
+            font-weight: normal;
+        }
+    }
 }
 
-div.formHelp,
-span.formHelp {
+div.formHelp {
     .help-block();
+}
+
+.formControls {
+    padding-top: @line-height-computed / 2;
 }
 
 input.context,
@@ -206,11 +226,20 @@ span.required {
     display: inline-block;
 }
 
+input.context,
+input.standalone {
+    .btn();
+    margin-right: 5px;
+}
+
+input.context {
+    .btn-primary();
+}
+
 /* Portal messages are styled like alerts */
 
 dl.portalMessage {
     .alert();
-    font-size:@font-size-small;
     dt {
         margin: 0;
     }
@@ -257,13 +286,13 @@ div.overlay {
     display: none;
     /* some padding to layout nested elements nicely  */
     margin: 1em;
-    font-size: 80%;
 }
 
 div.overlay-iframe,
 div.overlay-ajax {
-    width: 60%;
+    width: auto;
     min-height: 100px;
+    left: 20%;
     z-index: 99; /* overlays should be above everything */
 }
 
@@ -274,7 +303,7 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
-    background-image: url(../img/pb_close.png);
+    background-image: url(../images/pb_close.png);
     position: absolute;
     left: -14px;
     top: -14px;
@@ -330,16 +359,10 @@ div.overlay {
     }
     /* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
     p {
-        margin-bottom: 1em;
+        margin-bottom: @line-height-base;
     }
     label {
         margin-bottom: 0.25em;
-    }
-    a:hover {
-        color: #75ad0a;
-    }
-    a.selected {
-        color: #000000;
     }
     .formTab {
         margin-right:1em;
@@ -669,6 +692,7 @@ dl.actionMenu.activated dd div {
 table.listing,
 table.plain {
     margin-bottom: @line-height-computed;
+    .table();
 }
 
 table.invisible td,
@@ -706,13 +730,14 @@ table.listing th {
     border: 0.1em solid #e7e7e7;
     border-style: solid solid none;
     background: @gray-lighter;
+    font-weight: 400;
 }
 table.listing tr.odd th {
     border: 0.1em solid #fff;
     border-style: solid solid none none;
 }
 table.listing tbody th {
-    font-weight: bold;
+    font-weight: 400;
 }
 table.listing tbody tr {
     text-align:left;

@@ -7,6 +7,15 @@
  *
  * Designed and built with all the love in the world by @mdo and @fat.
  */
+/*!
+ * Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
@@ -4144,8 +4153,8 @@ td.hidden-lg {
 }
 .discreet {
   color: #666;
-  font-size: 85%;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 1;
 }
 .visualHighlight {
   background-color: #c09853;
@@ -4156,8 +4165,6 @@ td.hidden-lg {
   width: 35%;
   clear: right;
   color: #999999;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
   line-height: 19px;
   padding: 11px 22px;
   margin: 22px 0 22px 22px;
@@ -4169,9 +4176,6 @@ td.hidden-lg {
   padding: 22px;
   margin: 0 0 22px;
   border-left: 5px solid #999999;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 18px;
-  line-height: 27.5px;
   clear: both;
 }
 /* @group Image alignment classes */
@@ -4213,7 +4217,9 @@ dd.image-caption {
 }
 /* @end */
 input.context,
-input.standalone {
+input.standalone,
+input.addreference,
+input.submit-widget {
   display: inline-block;
   padding: 8px 12px;
   margin-bottom: 0;
@@ -4229,24 +4235,35 @@ input.standalone {
   color: #ffffff;
   background-color: #474949;
   border-color: #474949;
+  margin-right: 11px;
 }
 input.context:focus,
-input.standalone:focus {
+input.standalone:focus,
+input.addreference:focus,
+input.submit-widget:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 input.context:hover,
 input.standalone:hover,
+input.addreference:hover,
+input.submit-widget:hover,
 input.context:focus,
-input.standalone:focus {
+input.standalone:focus,
+input.addreference:focus,
+input.submit-widget:focus {
   color: #fff;
   text-decoration: none;
 }
 input.context:active,
 input.standalone:active,
+input.addreference:active,
+input.submit-widget:active,
 input.context.active,
-input.standalone.active {
+input.standalone.active,
+input.addreference.active,
+input.submit-widget.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -4254,10 +4271,16 @@ input.standalone.active {
 }
 input.context.disabled,
 input.standalone.disabled,
+input.addreference.disabled,
+input.submit-widget.disabled,
 input.context[disabled],
 input.standalone[disabled],
+input.addreference[disabled],
+input.submit-widget[disabled],
 fieldset[disabled] input.context,
-fieldset[disabled] input.standalone {
+fieldset[disabled] input.standalone,
+fieldset[disabled] input.addreference,
+fieldset[disabled] input.submit-widget {
   cursor: default;
   pointer-events: none;
   opacity: 0.65;
@@ -4266,51 +4289,91 @@ fieldset[disabled] input.standalone {
   box-shadow: none;
 }
 input.context .badge,
-input.standalone .badge {
+input.standalone .badge,
+input.addreference .badge,
+input.submit-widget .badge {
   position: relative;
   top: -1px;
 }
 input.context:hover,
 input.standalone:hover,
+input.addreference:hover,
+input.submit-widget:hover,
 input.context:focus,
 input.standalone:focus,
+input.addreference:focus,
+input.submit-widget:focus,
 input.context:active,
 input.standalone:active,
+input.addreference:active,
+input.submit-widget:active,
 input.context.active,
-input.standalone.active {
+input.standalone.active,
+input.addreference.active,
+input.submit-widget.active {
   background-color: #3a3c3c;
   border-color: #2e2f2f;
 }
 input.context.disabled,
 input.standalone.disabled,
+input.addreference.disabled,
+input.submit-widget.disabled,
 input.context[disabled],
 input.standalone[disabled],
+input.addreference[disabled],
+input.submit-widget[disabled],
 fieldset[disabled] input.context,
 fieldset[disabled] input.standalone,
+fieldset[disabled] input.addreference,
+fieldset[disabled] input.submit-widget,
 input.context.disabled:hover,
 input.standalone.disabled:hover,
+input.addreference.disabled:hover,
+input.submit-widget.disabled:hover,
 input.context[disabled]:hover,
 input.standalone[disabled]:hover,
+input.addreference[disabled]:hover,
+input.submit-widget[disabled]:hover,
 fieldset[disabled] input.context:hover,
 fieldset[disabled] input.standalone:hover,
+fieldset[disabled] input.addreference:hover,
+fieldset[disabled] input.submit-widget:hover,
 input.context.disabled:focus,
 input.standalone.disabled:focus,
+input.addreference.disabled:focus,
+input.submit-widget.disabled:focus,
 input.context[disabled]:focus,
 input.standalone[disabled]:focus,
+input.addreference[disabled]:focus,
+input.submit-widget[disabled]:focus,
 fieldset[disabled] input.context:focus,
 fieldset[disabled] input.standalone:focus,
+fieldset[disabled] input.addreference:focus,
+fieldset[disabled] input.submit-widget:focus,
 input.context.disabled:active,
 input.standalone.disabled:active,
+input.addreference.disabled:active,
+input.submit-widget.disabled:active,
 input.context[disabled]:active,
 input.standalone[disabled]:active,
+input.addreference[disabled]:active,
+input.submit-widget[disabled]:active,
 fieldset[disabled] input.context:active,
 fieldset[disabled] input.standalone:active,
+fieldset[disabled] input.addreference:active,
+fieldset[disabled] input.submit-widget:active,
 input.context.disabled.active,
 input.standalone.disabled.active,
+input.addreference.disabled.active,
+input.submit-widget.disabled.active,
 input.context[disabled].active,
 input.standalone[disabled].active,
+input.addreference[disabled].active,
+input.submit-widget[disabled].active,
 fieldset[disabled] input.context.active,
-fieldset[disabled] input.standalone.active {
+fieldset[disabled] input.standalone.active,
+fieldset[disabled] input.addreference.active,
+fieldset[disabled] input.submit-widget.active {
   background-color: #474949;
   border-color: #474949;
 }
@@ -4427,10 +4490,10 @@ select.datetime-widget,
 #content .field input[type="text"][name$=".title"],
 #form-widgets-IBasic-title,
 #archetypes-fieldname-title input {
-  height: 33px;
+  height: 38.5px;
   line-height: 33px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
   width: 100%;
   color: #555555;
 }
@@ -4440,21 +4503,21 @@ select.datetime-widget,
 #archetypes-fieldname-description textarea#description {
   color: #555555;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   width: 100%;
 }
 div.fieldTextFormat {
   text-align: right;
 }
 div.fieldTextFormat label {
-  font-weight: normal;
+  font-weight: 300;
   color: #999999;
 }
 div.fieldTextFormat select {
   width: 120px;
 }
 #content-core label {
-  font-weight: bold;
+  font-weight: 400;
 }
 #content-core label span.formHelp {
   display: block;
@@ -4462,21 +4525,131 @@ div.fieldTextFormat select {
   margin-bottom: 10px;
   color: #737373;
   color: #999999;
-  font-weight: normal;
+  font-weight: 300;
 }
 div.field {
   margin-bottom: 11px;
 }
-div.formHelp,
-span.formHelp {
+div.field label span.formHelp {
+  display: block;
+  font-weight: normal;
+  color: #999999;
+}
+div.field div.label {
+  background: transparent;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 0px;
+  text-align: left;
+}
+div.field div.label span.formHelp {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+  color: #999999;
+  font-weight: normal;
+}
+div.formHelp {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
   color: #737373;
 }
+.formControls {
+  padding-top: 11px;
+}
 .fieldRequired,
 span.required {
   display: inline-block;
+}
+input.context,
+input.standalone {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-right: 5px;
+}
+input.context:focus,
+input.standalone:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+input.context:hover,
+input.standalone:hover,
+input.context:focus,
+input.standalone:focus {
+  color: #fff;
+  text-decoration: none;
+}
+input.context:active,
+input.standalone:active,
+input.context.active,
+input.standalone.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+input.context.disabled,
+input.standalone.disabled,
+input.context[disabled],
+input.standalone[disabled],
+fieldset[disabled] input.context,
+fieldset[disabled] input.standalone {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input.context .badge,
+input.standalone .badge {
+  position: relative;
+  top: -1px;
+}
+input.context {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+input.context:hover,
+input.context:focus,
+input.context:active,
+input.context.active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+input.context.disabled,
+input.context[disabled],
+fieldset[disabled] input.context,
+input.context.disabled:hover,
+input.context[disabled]:hover,
+fieldset[disabled] input.context:hover,
+input.context.disabled:focus,
+input.context[disabled]:focus,
+fieldset[disabled] input.context:focus,
+input.context.disabled:active,
+input.context[disabled]:active,
+fieldset[disabled] input.context:active,
+input.context.disabled.active,
+input.context[disabled].active,
+fieldset[disabled] input.context.active {
+  background-color: #428bca;
+  border-color: #428bca;
 }
 /* Portal messages are styled like alerts */
 dl.portalMessage {
@@ -4486,7 +4659,6 @@ dl.portalMessage {
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   border-radius: 4px;
-  font-size: 14px;
 }
 dl.portalMessage h4 {
   margin-top: 0;
@@ -4564,12 +4736,12 @@ div.overlay {
   /* some padding to layout nested elements nicely  */
 
   margin: 1em;
-  font-size: 80%;
 }
 div.overlay-iframe,
 div.overlay-ajax {
-  width: 60%;
+  width: auto;
   min-height: 100px;
+  left: 20%;
   z-index: 99;
   /* overlays should be above everything */
 
@@ -4580,7 +4752,7 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
-  background-image: url(../img/pb_close.png);
+  background-image: url(../images/pb_close.png);
   position: absolute;
   left: -14px;
   top: -14px;
@@ -4635,16 +4807,10 @@ div.overlay #createGroup fieldset {
   display: none;
 }
 div.overlay p {
-  margin-bottom: 1em;
+  margin-bottom: 1.428571429;
 }
 div.overlay label {
   margin-bottom: 0.25em;
-}
-div.overlay a:hover {
-  color: #75ad0a;
-}
-div.overlay a.selected {
-  color: #000000;
 }
 div.overlay .formTab {
   margin-right: 1em;
@@ -5037,7 +5203,47 @@ dl.actionMenu.activated dd div {
 /* @group Data tables */
 table.listing,
 table.plain {
+  width: 100%;
   margin-bottom: 22px;
+}
+table.listing thead > tr > th,
+table.plain thead > tr > th,
+table.listing tbody > tr > th,
+table.plain tbody > tr > th,
+table.listing thead > tr > td,
+table.plain thead > tr > td,
+table.listing tbody > tr > td,
+table.plain tbody > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+table.listing thead > tr > th,
+table.plain thead > tr > th {
+  vertical-align: bottom;
+}
+table.listing caption + thead tr:first-child th,
+table.plain caption + thead tr:first-child th,
+table.listing caption + thead tr:first-child td,
+table.plain caption + thead tr:first-child td,
+table.listing colgroup + thead tr:first-child th,
+table.plain colgroup + thead tr:first-child th,
+table.listing colgroup + thead tr:first-child td,
+table.plain colgroup + thead tr:first-child td,
+table.listing thead:first-child tr:first-child th,
+table.plain thead:first-child tr:first-child th,
+table.listing thead:first-child tr:first-child td,
+table.plain thead:first-child tr:first-child td {
+  border-top: 0;
+}
+table.listing tbody + tbody,
+table.plain tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+table.listing .table,
+table.plain .table {
+  background-color: #ffffff;
 }
 table.invisible td,
 table.invisible th,
@@ -5067,13 +5273,14 @@ table.listing th {
   border: 0.1em solid #e7e7e7;
   border-style: solid solid none;
   background: #eeeeee;
+  font-weight: 400;
 }
 table.listing tr.odd th {
   border: 0.1em solid #fff;
   border-style: solid solid none none;
 }
 table.listing tbody th {
-  font-weight: bold;
+  font-weight: 400;
 }
 table.listing tbody tr {
   text-align: left;
@@ -5171,26 +5378,13 @@ body > header {
 body > header #toolbar + nav {
   margin-top: 50px;
 }
-body > header #toolbar + nav .navbar-inner {
-  border-radius: 0px;
-}
-body > header #main-nav .selected > a,
-body > header #main-nav .selected > a:hover,
-body > header #main-nav .selected > a:focus {
-  color: #555555;
-  text-decoration: none;
-  background-color: #d5d5d5;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-}
 .portlet .portletHeader {
   font-size: 24px;
-  padding: 14px;
+  padding: 11px;
   border-bottom: 1px solid #999999;
 }
 .portlet .portletItem {
-  padding: 16px;
+  padding: 14px;
 }
 .portlet .portletFooter {
   padding: 14px;

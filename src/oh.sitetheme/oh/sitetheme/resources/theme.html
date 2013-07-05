@@ -2,21 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>oh Theme, based on Twitter Bootstrap</title>
+    <title>Example Theme, based on Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
     <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+    <!-- Responsive styles - enable if necessary -->
+    <!--<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">-->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
     <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
   </head>
 
@@ -26,6 +28,7 @@
       <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
           <a class="navbar-brand" href="#">Plone Toolbar</a>
       </div>
+
       <nav class="navbar">
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -33,16 +36,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Title</a>
           <div class="nav-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav" id="main-nav">
+            <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
             </ul>
           </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
       </nav><!-- /.navbar -->
+
     </header>
 
     <section class="container">
@@ -58,7 +75,11 @@
       </div>
     </footer>
 
-    <script src="../js/application.js"></script>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
 
   </body>
 </html>

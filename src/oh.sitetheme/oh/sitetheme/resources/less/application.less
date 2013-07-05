@@ -1,25 +1,10 @@
 // Custom application specific styles
 //--------------------------------------
 
-
 body > header {
     margin-bottom: @line-height-computed;
     #toolbar + nav {
         margin-top: @navbar-height;
-        .navbar-inner {
-            border-radius:0px;
-        }
-    }
-    // Active nav items
-    #main-nav .selected > a,
-    #main-nav .selected > a:hover,
-    #main-nav .selected > a:focus {
-      color: @navbar-link-active-color;
-      text-decoration: none;
-      background-color: @navbar-link-active-bg;
-      -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
-         -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
-              box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
     }
 }
 
@@ -28,11 +13,11 @@ body > header {
 .portlet {
   .portletHeader {
     font-size: @font-size-base * 1.5;
-    padding: @padding-large-vertical;
+    padding: @line-height-computed / 2;
     border-bottom: 1px solid @gray-light;
   }
   .portletItem {
-    padding: @padding-large-horizontal;
+    padding: @padding-large-vertical;
   }
   .portletFooter {
     padding: @padding-large-vertical;
@@ -40,7 +25,7 @@ body > header {
   }
 }
 
-// oh styles for listings (e.g. folder summary view)
+// Example styles for listings (e.g. folder summary view)
 
 .tileItem {
   .media();
@@ -50,7 +35,7 @@ body > header {
 }
 
 
-// oh styles for a HMTL5 based site footer
+// Example styles for a HMTL5 based site footer
 body > footer {
     margin-top: @line-height-computed;
     padding: @line-height-computed 0;
