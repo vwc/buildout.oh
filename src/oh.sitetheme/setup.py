@@ -3,9 +3,9 @@ import os
 
 version = '1.0'
 
-setup(name='example.sitetheme',
+setup(name='oh.sitetheme',
       version=version,
-      description="Example Diazo Plone Theme",
+      description="oh Diazo Plone Theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -20,7 +20,7 @@ setup(name='example.sitetheme',
       url='http://dist.vorwaerts-werbung.de',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['example'],
+      namespace_packages=['oh'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
