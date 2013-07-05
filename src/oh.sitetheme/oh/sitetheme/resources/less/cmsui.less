@@ -4,7 +4,7 @@
 
 .avatar {
     margin-right: 2px;
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
     border: 1px solid #ddd;
     border-radius: 4px;
     .box-shadow(0 1px 3px rgba(0,0,0,.055));
@@ -28,27 +28,27 @@
 
 .pullquote {
     //margin: 0 1em 0.5em 0.5em;
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
     float: right;
     width: 35%;
     clear: right;
-    color: @grayLight;
-    font-family: @font-family-monospace;
+    color: @gray-light;
+    font-family: @font-family-sans-serif;
     font-weight: 300;
-    line-height: @line-height-base - 3;
-    padding: @line-height-base / 2 @line-height-base;
-    margin: @line-height-base 0 @line-height-base @line-height-base;
-    border-left: 5px solid @grayLight;
-    background: @grayLighter;
+    line-height: @line-height-computed - 3;
+    padding: @line-height-computed / 2 @line-height-computed;
+    margin: @line-height-computed 0 @line-height-computed @line-height-computed;
+    border-left: 5px solid @gray-light;
+    background: @gray-lighter;
 }
 .callout {
-    background: @grayLighter;
-    padding: @line-height-base;
-    margin: 0 0 @line-height-base;
-    border-left: 5px solid @grayLight;
+    background: @gray-lighter;
+    padding: @line-height-computed;
+    margin: 0 0 @line-height-computed;
+    border-left: 5px solid @gray-light;
     font-family: @font-family-monospace;
     font-size: @font-size-base + 2;
-    line-height: @line-height-base * 1.25;
+    line-height: @line-height-computed * 1.25;
     clear: both;
 }
 
@@ -56,11 +56,11 @@
 
 .image-left {
    float: left;
-   margin: @line-height-base / 2 @line-height-base @line-height-base 0;
+   margin: @line-height-computed / 2 @line-height-computed @line-height-computed 0;
 }
 .image-right {
    float: right;
-   margin: @line-height-base / 2 0 @line-height-base @line-height-base;
+   margin: @line-height-computed / 2 0 @line-height-computed @line-height-computed;
 }
 .image-inline {
    float: none;
@@ -85,12 +85,13 @@ dd.image-caption {
 
 input.context,
 input.standalone {
-    //.btn();
+    .btn();
+    .btn-default();
 }
 
 #category {
     font-size: 11px;
-    margin: @line-height-base 0px;
+    margin: @line-height-computed 0px;
     a.link-category,
     span.selectedTag {
         padding: 0.25em 0.5em;
@@ -113,7 +114,7 @@ input.standalone {
         display: inline-block;
         padding: 5px 14px;
         background-color: #fff;
-        border: 1px solid @grayLight;
+        border: 1px solid @gray-light;
         border-radius: 4px;
         font-size: 11px;
         &.next {
@@ -134,7 +135,7 @@ input.standalone {
 input[type="checkbox"] + label,
 .ArchetypesBooleanWidget label {
     display: inline-block;
-    margin-left: @line-height-base / 4;
+    margin-left: @line-height-computed / 4;
 }
 
 input.datetime-widget,
@@ -147,8 +148,8 @@ select.datetime-widget,
 #content .field input[type="text"][name$=".title"],
 #form-widgets-IBasic-title,
 #archetypes-fieldname-title input {
-    height: @line-height-base * 1.5;
-    line-height: @line-height-base * 1.5;
+    height: @line-height-computed * 1.5;
+    line-height: @line-height-computed * 1.5;
     font-size: @font-size-base * 1.25;
     font-weight: bold;
     width: 100%;
@@ -166,7 +167,7 @@ select.datetime-widget,
 }
 
 div.fieldTextFormat {
-    //padding: @line-height-base;
+    //padding: @line-height-computed;
     text-align: right;
     label {
         font-weight: normal;
@@ -187,16 +188,12 @@ div.fieldTextFormat {
 }
 
 div.field {
-    margin-bottom: @line-height-base / 2;
+    margin-bottom: @line-height-computed / 2;
 }
 
 div.formHelp,
 span.formHelp {
     .help-block();
-}
-
-.formControls {
-    .form-actions();
 }
 
 input.context,
@@ -247,7 +244,7 @@ dl.portalMessage {
         background-color: @state-warning-text;
     }
     .state-visible {
-        background-color: @grayDark;
+        background-color: @gray-dark;
     }
 }
 
@@ -441,7 +438,7 @@ ul.formTabs {
     background: transparent;
     .nav();
     .nav-tabs();
-    margin: 0 0 @line-height-base / 2;
+    margin: 0 0 @line-height-computed / 2;
     list-style-type: none;
     li {
         float: left;
@@ -449,11 +446,11 @@ ul.formTabs {
         a {
         padding: 8px 12px;
         display: block;
-        line-height: @line-height-base - 6;
+        line-height: @line-height-computed - 6;
         border: 1px solid transparent;
         border-radius: 4px 4px 0 0;
             &:hover {
-                border-color: @grayLighter @grayLighter #ddd;
+                border-color: @gray-lighter @gray-lighter #ddd;
             }
             &.selected {
                 color: @gray;
@@ -583,12 +580,12 @@ div.field span.required:after {
 }
 
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: @grayLight;
+    background-color: @gray-light;
     color: White;
     z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid @grayLight;
+    border-bottom: 0.5em solid @gray-light;
     right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
@@ -597,7 +594,7 @@ div.field span.required:after {
     color: #666;
 }
 #contentActionMenus dl.actionMenu {
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
 }
 
 #folderHeader, #contextHeader {
@@ -671,7 +668,7 @@ dl.actionMenu.activated dd div {
 
 table.listing,
 table.plain {
-    margin-bottom: @line-height-base;
+    margin-bottom: @line-height-computed;
 }
 
 table.invisible td,
@@ -705,10 +702,10 @@ table.listing .top {
 }
 table.listing th {
     text-align: left;
-    color: @grayLight;
+    color: @gray-light;
     border: 0.1em solid #e7e7e7;
     border-style: solid solid none;
-    background: @grayLighter;
+    background: @gray-lighter;
 }
 table.listing tr.odd th {
     border: 0.1em solid #fff;
