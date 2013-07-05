@@ -5375,8 +5375,8 @@ table.grid th {
 body > header {
   margin-bottom: 22px;
 }
-body > header #toolbar + nav {
-  margin-top: 50px;
+body > header #main-nav {
+  font-size: 14px;
 }
 .portlet .portletHeader {
   font-size: 24px;
