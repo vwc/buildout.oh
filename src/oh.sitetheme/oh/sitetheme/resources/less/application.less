@@ -8,6 +8,77 @@ body > header {
     }
 }
 
+#toolbar + #topbar {
+    margin-top: @navbar-height;
+}
+
+#topbar {
+  .nav > li {
+    > a {
+      color: @gray;
+      text-transform: uppercase;
+      &:hover {
+        color: @gray-dark;
+        background-color: @body-bg;
+        border-radius: 0px;
+      }
+    }
+    &.active > a,
+    &.selected > a,
+    &.active > a:hover,
+    &.selected > a:hover,
+    &.active > a:focus {
+      color: @brand-primary;
+      background-color: @body-bg;
+      border-radius: 0px;
+      border-bottom-color: transparent;
+      cursor: default;
+    }
+  }
+}
+
+#topbar-brand {
+  border: 1px solid @gray-light;
+  background: @gray-lighter;
+  padding: @line-height-computed;
+  h3 {
+    color: #000;
+    margin-bottom: 0px;
+    font-size: ceil(@font-size-base * 2.5);
+    > a,
+    > a:hover {
+      color: #000;
+    }
+  }
+  h5 {
+    color: @gray-light;
+    margin-top: 0px;
+  }
+}
+
+#hero-unit {
+  background: @gray-lighter;
+  margin: @line-height-computed 0;
+  .hero-unit {
+    //background:url(../img/eyes-inverse.png) no-repeat 0 0 transparent;
+    padding: @line-height-computed * 1.5 0 @line-height-computed / 2 @line-height-computed / 2;
+    min-height: 110px;
+    h1 {
+      font-weight: 500;
+      color: #000;
+    }
+    .hero-claim {
+      padding: @line-height-computed  @line-height-computed 0 0;
+      font-weight: 400;
+      font-size: @font-size-base * 1.5;
+    }
+  }
+}
+
+#sidebar-content {
+  margin-bottom: @line-height-computed;
+}
+
 // Some eample styles for portlets
 
 .portlet {
