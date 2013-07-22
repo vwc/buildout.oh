@@ -12,9 +12,9 @@
     <article class="front-page">
         <section class="front-page-header">
             <div class="container">
-                <div class="frontpage-banner text-right">
+                <div class="front-page-banner hidden-sm">
                     <img src="++theme++oh.sitetheme/img/hero-banner.jpg" 
-                        class="img-thumbnail hidden-sm" />
+                        class="ximg-thumbnail" />
                 </div>
                 <div class="front-page-title">
                    <h1 tal:content="context/Title" />

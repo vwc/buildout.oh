@@ -6974,6 +6974,7 @@ body > header {
   background: url(../img/die-linke-kreisverband-augsburg.jpg) no-repeat 0 0 transparent;
   text-indent: -9999px;
   overflow: hidden;
+  margin-right: 22px;
 }
 .topbar .navbar-main {
   padding-left: 0px;
@@ -7035,6 +7036,11 @@ body > header {
   font-weight: 400;
   font-size: 24px;
 }
+.front-page-banner {
+  border: 0px solid #eeeeee;
+  border-width: 2px 0px;
+  text-align: right;
+}
 .front-page-body {
   color: #999999;
 }
@@ -7051,9 +7057,13 @@ body > header {
 .tile {
   padding: 11px;
   color: #fff;
+  margin-bottom: 22px;
 }
 .tile.tile-primary {
   background: #da0f00;
+}
+.tile.tile-default {
+  background: #cccccc;
 }
 .tile .tile-content {
   background: url(../img/sprite-cta-boxes.jpg) no-repeat 0 0 transparent;
@@ -7068,6 +7078,46 @@ body > header {
   margin-left: auto;
   margin-right: auto;
   background-position: -1px -1px;
+}
+.tile .tile-content.tile-content-consultation {
+  width: 267px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: -1px -216px;
+}
+.tile .tile-content.tile-content-newsletter {
+  width: 267px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: -1px -336px;
+}
+.tile .tile-content.tile-content-nons {
+  width: 267px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: -1px -456px;
+}
+.tile .tile-content.tile-content-join {
+  width: 267px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: -1px -576px;
+}
+.tile .tile-content.tile-content-store {
+  width: 267px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: -1px -697px;
 }
 .portlet .portletHeader {
   font-size: 24px;

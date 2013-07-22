@@ -32,6 +32,7 @@ body > header {
         background:url(../img/die-linke-kreisverband-augsburg.jpg) no-repeat 0 0 transparent;
         text-indent: -9999px;
         overflow: hidden;
+        margin-right: @line-height-computed;
     }
 }
 
@@ -107,6 +108,12 @@ body > header {
 
 // Frontpage overrides
 
+.front-page-banner {
+    border: 0px solid @gray-lighter;
+    border-width: 2px 0px;
+    text-align: right;
+}
+
 .front-page-body {
     color: @gray-light;
 }
@@ -132,9 +139,14 @@ body > header {
 .tile {
     padding: @line-height-computed / 2;
     color: #fff;
+    margin-bottom: @line-height-computed;
     &.tile-primary {
         //background:@brand-primary;
         background: #da0f00;
+    }
+    &.tile-default {
+        //background:@brand-primary;
+        background: lighten(@gray-light, 20%);
     }
     .tile-content {
         background:url(../img/sprite-cta-boxes.jpg) no-repeat 0 0 transparent;
@@ -145,6 +157,31 @@ body > header {
             .size(267px, 200px);
             .center-block();
             background-position: -1px -1px;
+        }
+        &.tile-content-consultation {
+            .size(267px, 100px);
+            .center-block();
+            background-position: -1px -216px;
+        }
+        &.tile-content-newsletter {
+            .size(267px, 100px);
+            .center-block();
+            background-position: -1px -336px;
+        }
+        &.tile-content-nons {
+            .size(267px, 100px);
+            .center-block();
+            background-position: -1px -456px;
+        }
+        &.tile-content-join {
+            .size(267px, 100px);
+            .center-block();
+            background-position: -1px -576px;
+        }
+        &.tile-content-store {
+            .size(267px, 40px);
+            .center-block();
+            background-position: -1px -697px;
         }
     }
 }
