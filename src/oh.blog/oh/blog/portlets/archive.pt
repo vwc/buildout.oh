@@ -1,7 +1,7 @@
 <div class="tile"
      id="infobox-blog-archive"
      i18n:domain="oh.blog">
-  <div class="page-header">
+  <div class="tile-header">
     <h4>
       <i18n:block translate="">Blog Archive</i18n:block>
     </h4>
