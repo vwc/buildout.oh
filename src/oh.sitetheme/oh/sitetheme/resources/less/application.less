@@ -3,9 +3,6 @@
 
 body > header {
     margin-bottom: @line-height-computed;
-    #main-nav {
-      font-size: @font-size-base - 2;
-    }
 }
 
 .hero-unit {
@@ -31,11 +28,11 @@ body > header {
     }
 }
 
-#toolbar + #topbar {
-    margin-top: @navbar-height;
+.topbar-inner {
+     border-bottom: 1px solid @gray-light;
 }
 
-#topbar {
+.topbar {
   .nav > li {
     > a {
       color: @gray;
@@ -51,8 +48,8 @@ body > header {
     &.active > a:hover,
     &.selected > a:hover,
     &.active > a:focus {
-      color: @brand-primary;
-      background-color: @body-bg;
+      color: #fff;
+      background-color: @brand-primary;
       border-radius: 0px;
       border-bottom-color: transparent;
       cursor: default;
@@ -133,5 +130,5 @@ body > header {
 body > footer {
     margin-top: @line-height-computed;
     padding: @line-height-computed 0;
-    border-top: 1px solid @gray-lighter;
+    border-top: 5px solid @brand-primary;
 }
