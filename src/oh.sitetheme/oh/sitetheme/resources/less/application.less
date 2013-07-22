@@ -8,6 +8,29 @@ body > header {
     }
 }
 
+.hero-unit {
+    background: @brand-primary;
+    padding: 0 0 @line-height-computed / 2 @line-height-computed / 2;
+    min-height: 110px;
+    h1 {
+      font-weight: 500;
+      color: #000;
+    }
+    .hero-claim {
+      padding: @line-height-computed / 2  @line-height-computed 0 0;
+      font-weight: 400;
+      font-size: @font-size-base * 2.5;
+      color: #fff;
+    }
+    .hero-brand {
+        display: block;
+        .size(200px, 100px);
+        background:url(../img/die-linke-kreisverband-augsburg.jpg) no-repeat 0 0 transparent;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+}
+
 #toolbar + #topbar {
     margin-top: @navbar-height;
 }
@@ -18,8 +41,8 @@ body > header {
       color: @gray;
       text-transform: uppercase;
       &:hover {
-        color: @gray-dark;
-        background-color: @body-bg;
+        //color: @gray-dark;
+        //background-color: @body-bg;
         border-radius: 0px;
       }
     }
