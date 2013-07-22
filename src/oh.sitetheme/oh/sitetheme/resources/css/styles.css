@@ -7056,10 +7056,10 @@ body > header {
 }
 .tile {
   padding: 11px;
-  color: #fff;
   margin-bottom: 22px;
 }
 .tile.tile-primary {
+  color: #fff;
   background: #da0f00;
 }
 .tile.tile-default {
