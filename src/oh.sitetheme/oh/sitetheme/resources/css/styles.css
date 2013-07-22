@@ -7119,6 +7119,9 @@ body > header {
   margin-right: auto;
   background-position: -1px -697px;
 }
+.tile h4 {
+  font-weight: 700;
+}
 .portlet .portletHeader {
   font-size: 24px;
   padding: 11px;

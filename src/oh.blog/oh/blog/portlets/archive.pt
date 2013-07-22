@@ -2,10 +2,9 @@
      id="infobox-blog-archive"
      i18n:domain="oh.blog">
   <div class="page-header">
-    <h3>
-      <i class="icon-time"></i>
+    <h4>
       <i18n:block translate="">Blog Archive</i18n:block>
-    </h3>
+    </h4>
   </div>
   <ul class="nav nav-list">
     <tal:block tal:repeat="year view/years">
