@@ -3,7 +3,6 @@
      i18n:domain="oh.blog">
 
     <h4>
-      <i class="icon-list-alt"></i>
         <i18n:block translate="">Categories</i18n:block>
     </h4>
 
