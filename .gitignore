@@ -30,6 +30,6 @@ src/plone.tiles
 src/ade25.fabfiles
 src/vwc.tiles
 src/vwc.toolbar
-src/vwc.typekit
+src/ade25.typekit
 src/sauna.reload
 src/watchdog

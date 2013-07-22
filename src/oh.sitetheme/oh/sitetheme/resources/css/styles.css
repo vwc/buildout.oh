@@ -258,7 +258,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.428571429;
   color: #333333;
@@ -364,7 +364,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "pt-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -5608,11 +5608,11 @@ a .icon-flip-vertical:before {
   content: "\f18b";
 }
 .app-font {
-  font-family: "pt-sans";
+  font-family: "source-sans-pro";
   color: #555555;
 }
 .app-font-alt {
-  font-family: "source-sans-pro";
+  font-family: "pt-sans";
   color: #555555;
 }
 .avatar {
@@ -6969,8 +6969,11 @@ body > header {
   text-indent: -9999px;
   overflow: hidden;
 }
-.topbar-inner {
-  border-bottom: 1px solid #999999;
+.topbar .navbar-main {
+  padding-left: 0px;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid #eeeeee;
 }
 .topbar .nav > li > a {
   color: #555555;

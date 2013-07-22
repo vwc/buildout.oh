@@ -11,13 +11,14 @@ from plone.app.discussion.interfaces import IConversation
 from plone.app.contentlisting.interfaces import IContentListing
 
 from plone.app.layout.navigation.interfaces import INavigationRoot
+from Products.CMFCore.interfaces import IContentish
 from Products.CMFCore.interfaces import IFolderish
 
 from oh.blog.blogentry import IBlogEntry
 
 
 class BlogView(grok.View):
-    grok.context(INavigationRoot)
+    grok.context(IContentish)
     grok.require('zope2.View')
     grok.name('blog-view')
 
@@ -44,9 +45,7 @@ class BlogView(grok.View):
     def _base_query(self):
         context = aq_inner(self.context)
         obj_provides = IBlogEntry.__identifier__
-        path = '/'.join(context.getPhysicalPath())
-        return dict(path={'query': path, 'depth': 2},
-                    object_provides=obj_provides,
+        return dict(object_provides=obj_provides,
                     sort_on='effective', sort_order='reverse')
 
     def get_entries(self, year=None, month=None, subject=None):
