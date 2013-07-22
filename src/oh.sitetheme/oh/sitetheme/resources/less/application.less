@@ -7,6 +7,7 @@ body > header {
 
 .hero-unit {
     background: @brand-primary;
+    //#gradient > .vertical(@brand-primary, 0%, #870000, 100%);
     padding: 0 0 @line-height-computed / 2 @line-height-computed / 2;
     min-height: 110px;
     h1 {
@@ -21,6 +22,9 @@ body > header {
       a {
         color: #fff;
       }
+    }
+    .hero-brand-container {
+        text-align: right;
     }
     .hero-brand {
         display: block;
@@ -107,6 +111,11 @@ body > header {
     color: @gray-light;
 }
 
+
+.content {
+    padding-bottom: @line-height-computed;
+}
+
 // Blog entries
 
 .blog-list-link {
@@ -118,6 +127,28 @@ body > header {
 #sidebar-content {
   margin-bottom: @line-height-computed;
 }
+
+
+.tile {
+    padding: @line-height-computed / 2;
+    color: #fff;
+    &.tile-primary {
+        //background:@brand-primary;
+        background: #da0f00;
+    }
+    .tile-content {
+        background:url(../img/sprite-cta-boxes.jpg) no-repeat 0 0 transparent;
+        display: block;
+        overflow: hidden;
+        text-indent: -3000px;
+        &.tile-content-clock {
+            .size(267px, 200px);
+            .center-block();
+            background-position: -1px -1px;
+        }
+    }
+}
+
 
 // Some eample styles for portlets
 

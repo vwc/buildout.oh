@@ -68,7 +68,7 @@
             css:theme-children="#content" />-->
 
         <replace css:theme-children="#content"
-            css:content="#content" />
+            css:content-children="#content" />
         
         <before css:content=".portalMessage" css:theme="#content" />
         <replace css:content-children="#viewlet-below-content"

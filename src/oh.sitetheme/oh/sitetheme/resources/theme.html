@@ -25,15 +25,15 @@
     <section class="container">
         <div class="hero-unit">
           <div class="row">
-            <div class="col col-12 col-lg-8">
+            <div class="col col-12 col-sm-6 col-lg-8">
                 <h1 class="hero-claim">
                     <a href="/" class="hero-link">Otto Hutter</a>
                 </h1>
             </div>
-            <div class="col col-12 col-lg-4">
+            <div class="col col-12 col-sm-6 col-lg-4">
                 <a href="" class="hero-brand hero-link" id="brandname">
                     Otto Hutter <small>Logo/Brand</small>
-                </a>            
+                </a>
             </div>
           </div>
         </div>
@@ -61,38 +61,45 @@
     <section class="container">
       <div class="row">
         <div class="col col-lg-8">
-          <div  id="content">
-            <header class="page-header app-font">
-              <h1>Starter template <small>The barebone minimal</small></h1>
-            </header>
-            <p class="lead">Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
-            <hr>
-              <p>therefore somewhat bad when it comes to line length, width and overall layout</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-          </div>
+            <div class="content">
+                <div  id="content">
+                  <header class="page-header app-font">
+                    <h1>Starter template <small>The barebone minimal</small></h1>
+                  </header>
+                  <p class="lead">Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+                  <hr>
+                    <p>therefore somewhat bad when it comes to line length, width and overall layout</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+                </div>
+            </div>
         </div>
         <div class="col col-lg-4">
           <aside id="sidebar">
-            <form id="search" class="hidden-sm" name="search" action="/search">
-                <div class="input-group xspan12">
-                <input id="search-site"
-                    type="text"
-                    name="SearchableText"
-                    title="Search this site&hellip;" accesskey="4"
-                    class="inputLabel roundedleft" size="15"
-                    />
-                <span class="input-group-btn">
-                <button class="btn"
-                    type="submit"
-                    value="Search"
-                    id="search-site-button">
-                    <i class="icon-search"></i>&nbsp;
-                </button>
-                </span>
-                </div>
-            </form>
+            <div class="tile tile-primary tile-search">
+                <form id="search" class="hidden-sm" name="search" action="/search">
+                    <div class="input-group xspan12">
+                    <input id="search-site"
+                        type="text"
+                        name="SearchableText"
+                        title="Search this site&hellip;" accesskey="4"
+                        class="inputLabel roundedleft" size="15"
+                        />
+                    <span class="input-group-btn">
+                    <button class="btn btn-default"
+                        type="submit"
+                        value="Search"
+                        id="search-site-button">
+                        <i class="icon-search"></i>&nbsp;
+                    </button>
+                    </span>
+                    </div>
+                </form>
+            </div>
             <div id="sidebar-content">
+            </div>
+            <div class="tile tile-primary">
+                <span class="tile-content tile-content-clock">This is content</span>
             </div>
             <div class="tile tile-cta text-right">
               <img src="img/sprite-cta-boxes.jpg" />
