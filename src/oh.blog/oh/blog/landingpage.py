@@ -1,7 +1,7 @@
 from five import grok
 from plone import api
 
-from plone.dexterity.content import Container
+from plone.dexterity.content import Item
 from plone.directives import form
 from plone.namedfile.interfaces import IImageScaleTraversable
 
@@ -23,7 +23,7 @@ class ILandingPage(form.Schema, IImageScaleTraversable):
     )
 
 
-class LandingPage(Container):
+class LandingPage(Item):
     grok.implements(ILandingPage)
 
 
@@ -36,6 +36,6 @@ class View(grok.View):
         catalog = api.portal.get_tool(name="portal_catalog")
         items = catalog(object_provides=IBlogEntry.__identifier__,
                         review_state='published',
-                        sort_on='efective',
+                        sort_on='effective',
                         sort_order='reverse')
         return IContentListing(items)

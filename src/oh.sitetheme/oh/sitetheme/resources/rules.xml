@@ -46,7 +46,7 @@
         <copy attributes="id dir" css:content="body" css:theme="body" />
 
         <!-- Logo (link target) -->
-        <copy attributes="href" css:content="#portal-logo" css:theme="#navbar-brand" />
+        <copy attributes="href" css:content="#portal-logo" css:theme="a.hero-link" />
 
         <!-- Site actions -->
         <!--<replace css:content="#portal-siteactions li" css:theme-children="#global-nav" />-->
@@ -64,8 +64,11 @@
             css:theme-children='#breadcrumbs' />
 
         <!-- Document Content -->
-        <replace css:content-children="#content" 
-            css:theme-children="#content" />
+        <!--<replace css:content-children="#content" 
+            css:theme-children="#content" />-->
+
+        <replace css:theme-children="#content"
+            css:content="#content" />
         
         <before css:content=".portalMessage" css:theme="#content" />
         <replace css:content-children="#viewlet-below-content"

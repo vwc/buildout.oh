@@ -12,8 +12,10 @@
     <article class="front-page">
         <section class="front-page-header">
             <div class="container">
-                <img src="++theme++oh.sitetheme/img/hero-banner.jpg" 
-                  class="img-thumbnail hidden-sm" />
+                <div class="frontpage-banner text-right">
+                    <img src="++theme++oh.sitetheme/img/hero-banner.jpg" 
+                        class="img-thumbnail hidden-sm" />
+                </div>
                 <div class="front-page-title">
                    <h1 tal:content="context/Title" />
                 </div>
@@ -47,7 +49,7 @@
                     <footer>
                       <a href="" class="xlink-more xpull-right"
                         tal:attributes="href item/getURL">
-                        <i class="icon-chevron-sign-right"></i>
+                        <i class="icon-caret-right"></i>
                         Weiterlesen</a>
                     </footer>
                 </article>
@@ -56,11 +58,10 @@
               </tal:entries>
             </section>
 
-            <div id="blog-link">
-              <a href="" class="btn btn-default btn-block"
+            <div class="blog-list-link">
+              <a href="" class="btn btn-primary btn-block"
                 tal:define="portal_url context/portal_url"
                 tal:attributes="href python:portal_url + '/blog'">
-                <i class="icon-plus-sign"></i>
                 Weitere Artikel</a>
             </div>
         </div>
