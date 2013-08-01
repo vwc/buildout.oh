@@ -143,6 +143,27 @@ body > header {
         color: #fff;
         background: #da0f00;
     }
+    &.tile-external {
+        color: #fff;
+        background: #da0f00;
+        font-size: @font-size-small;
+        text-align: center;
+        .distributionCounterResult {
+            font-size: @font-size-base * 2;
+        }
+        h1 {
+            font-size: @font-size-base * 1.5;
+        }
+        h2 {
+            font-size: @font-size-base;
+        }
+        .src {
+            font-size: @font-size-small - 2;
+            a {
+                color: @gray-lighter;
+            }
+        }
+    }
     &.tile-default {
         background: lighten(@gray-light, 20%);
     }
@@ -151,15 +172,15 @@ body > header {
         display: block;
         overflow: hidden;
         text-indent: -3000px;
-        &.tile-content-clock {
-            .size(267px, 200px);
-            .center-block();
-            background-position: -1px -1px;
-        }
-        &.tile-content-consultation {
+        &.tile-content-participate {
             .size(267px, 100px);
             .center-block();
-            background-position: -1px -216px;
+            background-position: 0px -115px;
+        }
+        &.tile-content-programm {
+            .size(245px, 100px);
+            .center-block();
+            background-position: -1px 0px;
         }
         &.tile-content-newsletter {
             .size(267px, 100px);
@@ -172,14 +193,14 @@ body > header {
             background-position: -1px -456px;
         }
         &.tile-content-join {
-            .size(267px, 100px);
+            .size(260px, 100px);
             .center-block();
-            background-position: -1px -576px;
+            background-position: 0px -236px;
         }
         &.tile-content-store {
             .size(267px, 40px);
             .center-block();
-            background-position: -1px -697px;
+            background-position: -1px -357px;
         }
     }
     h4 {
