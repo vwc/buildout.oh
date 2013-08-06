@@ -6039,6 +6039,9 @@ input.submit-widget {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  text-shadow: none;
+  box-shadow: none;
+  background-image: none;
   color: #ffffff;
   background-color: #474949;
   border-color: #474949;
@@ -6755,6 +6758,11 @@ dd.image-caption {
 .app-font-alt {
   font-family: "pt-sans";
   color: #555555;
+}
+.btn {
+  text-shadow: none;
+  box-shadow: none;
+  background-image: none;
 }
 body > header {
   margin-bottom: 22px;

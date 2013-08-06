@@ -22,6 +22,7 @@
     <tal:block tal:repeat="item view/blogitems">
       <article class="blog-list-entry">
         <div class="page-header">
+          <p tal:content="item/effective" />
           <h2><small tal:content="python:toLocalizedTime(item.effective)" /><br />
             <a href="" tal:attributes="href item/getURL"
                 tal:content="item/Title" />

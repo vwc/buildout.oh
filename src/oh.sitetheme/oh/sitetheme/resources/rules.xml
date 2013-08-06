@@ -64,11 +64,14 @@
             css:theme-children='#breadcrumbs' />
 
         <!-- Document Content -->
-        <!--<replace css:content-children="#content" 
+        <!--<replace css:content-children="#content"
             css:theme-children="#content" />-->
 
-        <replace css:theme-children="#content"
-            css:content-children="#content" />
+        <drop css:content="#viewlet-above-content" />
+        <drop css:content="#viewlet-below-content" />
+
+        <replace css:theme="#content"
+            css:content="#portal-column-content" />
         
         <before css:content=".portalMessage" css:theme="#content" />
         <replace css:content-children="#viewlet-below-content"
