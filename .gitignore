@@ -26,6 +26,7 @@ etc/**/*
 src/plone.app.blocks
 src/plone.app.contenttypes
 src/plone.app.tiles
+src/plone.app.widgets
 src/plone.tiles
 src/ade25.fabfiles
 src/vwc.tiles
