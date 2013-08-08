@@ -13,7 +13,7 @@
     tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
       <article class="blog-entry">
         <header class="page-header">
-          <h1 class="documentFirstHeading blog-headline">
+          <h1 class="documentFirstHeading blog-entry-title">
             <small tal:condition="not:context/effective"
                 tal:content="python:toLocalizedTime(context.modified())" />
             <small tal:condition="context/effective"
