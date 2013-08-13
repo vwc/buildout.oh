@@ -6845,6 +6845,50 @@ fieldset[disabled] input.context.active {
   background-color: #df0404;
   border-color: #c60404;
 }
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"] {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"]:-moz-placeholder {
+  color: #999999;
+}
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"]::-moz-placeholder {
+  color: #999999;
+}
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"]:-ms-input-placeholder {
+  color: #999999;
+}
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"]::-webkit-input-placeholder {
+  color: #999999;
+}
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"]:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"][disabled],
+select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"][readonly],
+fieldset[disabled] select textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+textareaselect textarea input[type="text"] input[type="password"] input[type="datetime"] input[type="datetime-local"] input[type="date"] input[type="month"] input[type="time"] input[type="week"] input[type="number"] input[type="email"] input[type="url"] input[type="search"] input[type="tel"] input[type="color"] {
+  height: auto;
+}
 input[type="checkbox"] + label,
 .ArchetypesBooleanWidget label {
   display: inline-block;
@@ -6897,6 +6941,7 @@ div.fieldTextFormat select {
   font-weight: 300;
 }
 div.field {
+  margin-bottom: 15px;
   margin-bottom: 11px;
 }
 div.field label span.formHelp {
@@ -7391,6 +7436,9 @@ body > header {
   background: transparent;
   border-bottom: 2px solid #eeeeee;
 }
+.topbar .nav-collapse {
+  margin-top: 0;
+}
 .topbar .nav > li > a {
   color: #333333;
   font-weight: 700;
@@ -7558,7 +7606,7 @@ body > header {
   border-bottom: 1px solid #999999;
 }
 .portlet .portlet-item {
-  padding: 10px;
+  padding: 11px;
 }
 .portlet .portlet-item .tile {
   padding: 0px;

@@ -14,7 +14,6 @@ env.forward_agent = True
 env.port = '22222'
 env.user = 'root'
 env.hosts = ['6zu4']
-env.hostname = '6zu4'
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/sites/oh/buildout.oh'
 env.local_root = '/Users/cb/dev/oh/buildout.oh'
@@ -49,4 +48,4 @@ def rebuild():
 @task
 def get_data():
     """ Copy live database for local development """
-    project.db.download()
+    project.db.download_data()
