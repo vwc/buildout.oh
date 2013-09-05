@@ -80,6 +80,8 @@ class Renderer(base.Renderer):
         catalog = getToolByName(self.context, 'portal_catalog')
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
+        if assignment_context is None:
+            assignment_context = self.context
         self.folder_path = '/'.join(assignment_context.getPhysicalPath())
         self.folder_url = assignment_context.absolute_url()
         brains = catalog(path={'query': self.folder_path, 'depth': 3},
