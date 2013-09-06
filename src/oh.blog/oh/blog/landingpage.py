@@ -37,5 +37,6 @@ class View(grok.View):
         items = catalog(object_provides=IBlogEntry.__identifier__,
                         review_state='published',
                         sort_on='effective',
-                        sort_order='reverse')
+                        sort_order='reverse',
+                        sort_limit=5)[:5]
         return IContentListing(items)

@@ -9423,6 +9423,9 @@ body > header {
 .page-signin .page-content {
   padding-top: 22px;
 }
+.event_listing ul.mode_selector {
+  font-size: 14px;
+}
 body > footer {
   margin-top: 22px;
   padding: 22px 0;
