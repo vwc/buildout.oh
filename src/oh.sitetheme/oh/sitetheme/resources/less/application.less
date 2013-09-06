@@ -45,6 +45,12 @@ body > header {
     }
 }
 
+// Move hero unit when toolbar is active
+
+#toolbar + #app-hero-unit {
+    margin-top: @navbar-height;
+}
+
 .topbar {
     .navbar-main {
         padding-left: 0px;
@@ -222,30 +228,52 @@ body > header {
 
 
 .portlet {
-  .portlet-header {
+    .panel();
+    .panel-primary();
+    border-radius: 0;
+  .portlet-header,
+  .portletHeader {
     font-size: @font-size-base * 1.5;
-    padding: @line-height-computed / 2;
-    border-bottom: 1px solid @gray-light;
+    padding: (@line-height-computed / 2);
+    .panel-heading();
+    > a {
+        color: #fff;
+    }
   }
-  .portlet-item {
+  .portlet-item,
+  .portletItem {
+    .panel-body();
     padding: @line-height-computed / 2;
     .tile {
       padding: 0px;
     }
+    .portletItemDetails {
+        display: block;
+        > span {
+            font-size:@font-size-small;
+        }
+    }
   }
-  .portlet-footer {
+  .portlet-footer,
+  .portletFooter {
     padding: @padding-large-vertical;
     font-size: @font-size-small;
+    .panel-footer();
   }
 }
 
-// Example styles for listings (e.g. folder summary view)
+// Custom signin page styles
 
-.tileItem {
-  .media();
-  .tileHeadline {
-    .media-heading();
-  }
+.page-signin {
+    .center-block();
+    max-width: 480px;
+    .page-content {
+        padding-top: @line-height-computed;
+    }
+    .page-footer {
+        //padding-top: @line-height-computed;
+        //border-top: 1px solid @gray-lighter;
+    }
 }
 
 

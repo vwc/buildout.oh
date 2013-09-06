@@ -11,6 +11,9 @@
 @font-family-base:        @app-font-family, @font-family-sans-serif;
 @headings-font-family:    @app-font-family-alt, @font-family-sans-serif;
 
+@input-border-radius:       0;
+@btn-border-radius:         0;
+
 
 // Use web-font as a lorem ipsum replacement - add class "wireframed" to make
 // blocks of text act as a placeholder
@@ -22,4 +25,8 @@
 .app-font-alt {
   font-family: @app-font-family-alt;
   color: @gray;
+}
+
+.hiddenStructure {
+    .hidden();
 }
