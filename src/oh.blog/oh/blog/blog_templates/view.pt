@@ -17,9 +17,13 @@
   <section id="blog-view"
     class="blog-list"
     tal:condition="view/blogitems"
-    tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
+    tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                Batch python:modules['Products.CMFPlone'].Batch;
+                b_size python:15;b_start python:0;b_start request/b_start | b_start;
+                results view/blogitems;
+                batch python:Batch(results, b_size, b_start);">
 
-    <tal:block tal:repeat="item view/blogitems">
+    <tal:block tal:repeat="item batch">
       <article class="blog-list-entry">
         <div class="page-header">
           <h2>
@@ -43,6 +47,7 @@
       </article>
       <hr>
     </tal:block>
+    <div metal:use-macro="context/batch_macros/macros/navigation" />
 
   </section>
     

@@ -25,7 +25,7 @@
     tal:condition="view/has_pressitem"
     tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                 Batch python:modules['Products.CMFPlone'].Batch;
-                b_size python:int(request.get('b_size', 20));
+                b_size python:int(request.get('b_size', 10));
                 b_start python:int(request.get('b_start', 0));
                 results view/pressitems;
                 batch python:Batch(results, b_size, b_start);">
