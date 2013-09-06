@@ -364,17 +364,32 @@ cite {
 .text-primary {
   color: #df0404;
 }
+.text-primary:hover {
+  color: #ad0303;
+}
 .text-warning {
   color: #c09853;
+}
+.text-warning:hover {
+  color: #a47e3c;
 }
 .text-danger {
   color: #b94a48;
 }
+.text-danger:hover {
+  color: #953b39;
+}
 .text-success {
   color: #468847;
 }
+.text-success:hover {
+  color: #356635;
+}
 .text-info {
   color: #3a87ad;
+}
+.text-info:hover {
+  color: #2d6987;
 }
 .text-left {
   text-align: left;
@@ -804,7 +819,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    width: 750px;
   }
   .col-sm-1,
   .col-sm-2,
@@ -957,7 +972,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 970px;
+    width: 970px;
   }
   .col-md-1,
   .col-md-2,
@@ -1119,7 +1134,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    width: 1170px;
   }
   .col-lg-1,
   .col-lg-2,
@@ -4536,6 +4551,7 @@ a.thumbnail:focus {
   width: 0%;
   height: 100%;
   font-size: 14px;
+  line-height: 22px;
   color: #ffffff;
   text-align: center;
   background-color: #df0404;
@@ -4742,6 +4758,33 @@ a.list-group-item:focus {
 }
 .panel > .panel-body + .table {
   border-top: 1px solid #dddddd;
+}
+.panel > .table-bordered {
+  border: 0;
+}
+.panel > .table-bordered > thead > tr > th:first-child,
+.panel > .table-bordered > tbody > tr > th:first-child,
+.panel > .table-bordered > tfoot > tr > th:first-child,
+.panel > .table-bordered > thead > tr > td:first-child,
+.panel > .table-bordered > tbody > tr > td:first-child,
+.panel > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+.panel > .table-bordered > thead > tr > th:last-child,
+.panel > .table-bordered > tbody > tr > th:last-child,
+.panel > .table-bordered > tfoot > tr > th:last-child,
+.panel > .table-bordered > thead > tr > td:last-child,
+.panel > .table-bordered > tbody > tr > td:last-child,
+.panel > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+.panel > .table-bordered > thead > tr:last-child > th,
+.panel > .table-bordered > tbody > tr:last-child > th,
+.panel > .table-bordered > tfoot > tr:last-child > th,
+.panel > .table-bordered > thead > tr:last-child > td,
+.panel > .table-bordered > tbody > tr:last-child > td,
+.panel > .table-bordered > tfoot > tr:last-child > td {
+  border-bottom: 0;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5364,9 +5407,16 @@ body.modal-open,
 .carousel-control .glyphicon-chevron-right {
   position: absolute;
   top: 50%;
-  left: 50%;
   z-index: 5;
   display: inline-block;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
@@ -9330,6 +9380,33 @@ body > header {
 }
 .portlet > .panel-body + .table {
   border-top: 1px solid #dddddd;
+}
+.portlet > .table-bordered {
+  border: 0;
+}
+.portlet > .table-bordered > thead > tr > th:first-child,
+.portlet > .table-bordered > tbody > tr > th:first-child,
+.portlet > .table-bordered > tfoot > tr > th:first-child,
+.portlet > .table-bordered > thead > tr > td:first-child,
+.portlet > .table-bordered > tbody > tr > td:first-child,
+.portlet > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+.portlet > .table-bordered > thead > tr > th:last-child,
+.portlet > .table-bordered > tbody > tr > th:last-child,
+.portlet > .table-bordered > tfoot > tr > th:last-child,
+.portlet > .table-bordered > thead > tr > td:last-child,
+.portlet > .table-bordered > tbody > tr > td:last-child,
+.portlet > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+.portlet > .table-bordered > thead > tr:last-child > th,
+.portlet > .table-bordered > tbody > tr:last-child > th,
+.portlet > .table-bordered > tfoot > tr:last-child > th,
+.portlet > .table-bordered > thead > tr:last-child > td,
+.portlet > .table-bordered > tbody > tr:last-child > td,
+.portlet > .table-bordered > tfoot > tr:last-child > td {
+  border-bottom: 0;
 }
 .portlet > .panel-heading {
   color: #ffffff;
