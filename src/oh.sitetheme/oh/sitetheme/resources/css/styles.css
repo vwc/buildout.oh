@@ -9502,6 +9502,12 @@ body > header {
 .page-signin .page-content {
   padding-top: 22px;
 }
+.page-signin .documentDescription {
+  margin-bottom: 22px;
+}
+.page-signin p {
+  color: #999999;
+}
 .event_listing ul.mode_selector {
   font-size: 14px;
 }
