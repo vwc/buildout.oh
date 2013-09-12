@@ -25,13 +25,16 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
-    background-image: url(../images/pb_close.png);
+    //background-image: url(../images/pb_close.png);
     position: absolute;
-    left: -14px;
-    top: -14px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
     height: 30px;
     width: 30px;
+    &:after {
+        content:'\d7';
+    }
 }
 
 .pb-ajax {

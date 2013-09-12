@@ -8607,13 +8607,16 @@ div.overlay-iframe {
 /* default close button positioned on upper-left corner */
 div.overlaybg div.close,
 div.overlay div.close {
-  background-image: url(../images/pb_close.png);
   position: absolute;
-  left: -14px;
-  top: -14px;
+  right: 10px;
+  top: 10px;
   cursor: pointer;
   height: 30px;
   width: 30px;
+}
+div.overlaybg div.close:after,
+div.overlay div.close:after {
+  content: '\d7';
 }
 .pb-ajax {
   overflow-y: auto;
@@ -9188,6 +9191,15 @@ body > header {
   border-radius: 0;
   background: transparent;
   border-bottom: 2px solid #eeeeee;
+}
+.topbar .navbar-main .navbar-toggle {
+  border: 1px solid #555555;
+  background: #eeeeee;
+}
+.topbar .navbar-main .navbar-toggle > .icon-bar {
+  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555555;
+  background: #555555;
 }
 .topbar .navbar-main .navbar-collapse {
   margin-top: -1px;

@@ -58,6 +58,15 @@ body > header {
         border-radius: 0;
         background:transparent;
         border-bottom: 2px solid @gray-lighter;
+        .navbar-toggle {
+            border: 1px solid @gray;
+            background: @gray-lighter;
+            > .icon-bar {
+                font-family: @font-family-base;
+                color: @gray;
+                background: @gray;
+            }
+        }
         .navbar-collapse {
             margin-top: -1px;
             padding-left: 0;
