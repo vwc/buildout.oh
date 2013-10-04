@@ -47,6 +47,8 @@
                     <p tal:condition="item/Description"
                       class="blog-description"
                       tal:content="item/Description" />
+                    <div tal:condition="item/text"
+                        tal:content="structure item/text/output" />
                     <footer>
                       <a href="" class="xlink-more xpull-right"
                         tal:attributes="href item/getURL">
